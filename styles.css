@@ -1,0 +1,344 @@
+/* The navbar should always be at the top of the viewport
+Your product landing page should have at least one media query
+Your product landing page should utilize CSS flexbox at least once */
+
+:root {
+  --body-color: lightgrey;
+  --headerfooter-color: rgb(255, 255, 255);
+  --main-color: pink;
+  --section-color: darkgrey;
+  --form-color: grey;
+  --list-color: coral;
+  --h1-color: brown;
+  --blacktext-color: black;
+  --h2-fontfamily: "kristen ITC";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid blueviolet; */
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--body-color);
+  width: 80%;
+  margin: auto;
+}
+
+/* header */
+
+#header {
+  background-color: var(--headerfooter-color);
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+h1,
+#header p {
+  min-width: 60%;
+  display: inline-block;
+  margin: 0 auto;
+  height: fit-content;
+  text-align: center;
+  padding: 1rem;
+}
+#header h1 {
+  font-size: 3rem;
+  color: var(--h1-color);
+  max-width: 70%;
+  position: absolute;
+  top: 7rem;
+  left: 20%;
+}
+#header p {
+  font-size: 2rem;
+  color: var(--blacktext-color);
+  max-width: 70%;
+  position: absolute;
+  top: 11rem;
+  left: 20%;
+}
+
+#header-img {
+  max-width: 10%;
+  display: inline-block;
+  margin: 5rem 2rem 2rem 2rem;
+}
+#nav-bar {
+  width: 80%;
+  position: fixed;
+  top: 0;
+}
+
+#nav-bar * {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-shrink: 3;
+  margin: 0 auto;
+}
+
+#nav-bar li {
+  max-width: inherit;
+  background-color: var(--list-color);
+  border: 0.1rem solid var(--headerfooter-color);
+}
+.nav-link {
+  max-width: inherit;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--h1-color);
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  margin: inherit;
+}
+.nav-link:hover {
+  color: var(--blacktext-color);
+}
+
+/* main section */
+
+main {
+  background-color: var(--main-color);
+  padding: 2rem 0;
+}
+section {
+  margin: 5rem auto;
+}
+.sub-heading {
+  text-align: center;
+  font-family: var(--h2-fontfamily);
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.paragraph {
+  font-size: 1.75rem;
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+}
+figure {
+  margin: 2rem auto;
+}
+#video {
+  display: block;
+  margin: 2rem auto 0 auto;
+}
+figcaption {
+  font-size: 2rem;
+  text-align: center;
+}
+#skills-ul {
+  width: 60%;
+  height: auto;
+  margin: 5rem auto;
+  list-style: none;
+}
+i.fas {
+  color: var(--headerfooter-color);
+  font-size: 4rem;
+  padding: 2rem;
+}
+li {
+  background-color: var(--list-color);
+}
+#skills-ul li {
+  margin: 2rem auto;
+  font-size: 2rem;
+  font-weight: 600;
+}
+#skills-ul span.fa-solid {
+    max-width: inherit;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.25rem;
+  padding: 1rem 3rem;
+  margin: 1rem auto;
+}
+
+#form {
+  width: 60%;
+  height: max-content;
+  background-color: var(--form-color);
+  margin: 2rem auto;
+  padding: 5rem 10rem;
+  border-radius: 0.5rem;
+}
+label {
+  font-size: 2rem;
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  padding: 1rem 0 0 0;
+  margin: 0 auto;
+}
+#forename,
+#surname,
+#email,
+#textarea {
+  font-size: 1.5rem;
+  width: 96%;
+  display: inline-block;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+#submit,
+.select {
+  display: block;
+  font-size: 2rem;
+  width: 60%;
+  background-color: aquamarine;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  border: 0;
+}
+#submit:hover,
+.select:hover {
+  background-color: aqua;
+  font-weight: 500;
+  color: rgb(44, 43, 43);
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#booking {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+#booking p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#booking article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5rem 2rem 1rem 2rem;
+  background-color: var(--list-color);
+  width: 20%;
+  height: auto;
+  border-radius: 0.2rem;
+}
+
+article a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+article h3 {
+  width: min-content;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+  outline: 0.25rem dashed burlywood;
+}
+article p {
+  font-size: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.em {
+  display: block;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.article-p {
+  font-size: 2.5rem;
+  color: wheat;
+}
+.booking {
+  min-width: 100%;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 5rem 0;
+  background-color: var(--headerfooter-color);
+}
+#footer-ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+#footer-ul li {
+  font-size: 1.25rem;
+  padding: 0.15rem 0.25rem;
+  margin: 1rem 0.5rem;
+}
+footer > a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+ @media only screen and (max-width: 720px) {
+  body {
+    background-color: black;
+  }
+
+#nav-bar {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+}
+
+  #header h1 {
+  font-size: 1.5rem;
+  color: var(--h1-color);
+  position: absolute;
+  top: 3rem;
+}
+#header p {
+  font-size: 1rem;
+  color: var(--blacktext-color);
+  position: absolute;
+  top: 5rem;
+}
+#video {
+  width: 60%;
+}
+#form {
+  width: 40%;
+}
+#booking article {
+  flex-direction: column;
+  width: 60%;
+  margin: 0.5rem;
+}
+#footer-ul {
+ flex-direction: column;
+}
+#footer-ul li {
+  font-size: 1rem;
+  padding: 0.15rem 0.25rem;
+  margin: 0.5rem;
+}
+  
+}

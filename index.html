@@ -1,0 +1,282 @@
+<!-- build an app, any app! functionally similar to https://product-landing-page.freecodecamp.rocks -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Early-Man Camping</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a6cf558f83.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <ul id="navbar-ul">
+          <li>
+            <a class="nav-link" href="#header-img">Logo</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#info">Info</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#video">Video</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#form">Form</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#booking">Booking</a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="http://127.0.0.1:5500/web_app/img/earlyManCampingLogo.png"
+        alt="Early-Man Camping Logo"
+        id="header-img"
+      />
+      <h1>Early-Man Camping</h1>
+      <p>Camping In The Wild like the Early-Man lived!</p>
+    </header>
+    <main>
+      <section id="info">
+        <h2 class="sub-heading">Lorem ipsum dolor sit amet consectetur.</h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          quisquam mollitia, perferendis non optio explicabo delectus accusamus,
+          sapiente cumque maxime consectetur at nisi voluptatum architecto alias
+          libero, iusto quaerat ipsum.
+        </p>
+        <figure>
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/pEcbKj-uEF4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <figcaption>
+            What to expect is wild camping in nature, watch this video.
+          </figcaption>
+        </figure>
+      </section>
+      <section id="skills">
+        <h2 class="sub-heading">You Will Learn Survival Skills</h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+          voluptates aut animi dolorem voluptas perferendis quia? Quam nihil cum
+          inventore voluptas nobis quos ullam amet. Repellat illo explicabo
+          ratione ab.
+        </p>
+        <ul id="skills-ul">
+          <li>
+            <i class="fas">&#xf700;</i>
+            Hunting and Gathering
+            <span class="fa-solid"
+              >You will learn how to hunt for survival and learn how to and what
+              to gather for food. you will also learn how to preserve what you
+              have to last longer</span
+            >
+          </li>
+          <li>
+            <i class="fas">&#xf6bb;</i>
+            Self-Built Tents
+            <span class="fa-solid"
+              >Using locally available materials, you will build youself an
+              habitable shelter to withstand the elements, keeping you also safe
+              and protected from wild animals</span
+            >
+          </li>
+
+          <li>
+            <i class="fas">&#xf06d;</i>
+            Making Fire
+            <span class="fa-solid"
+              >Fire is essential for your cooking and keeping warm. you will
+              learn how to make fire just like the early-man did using flint
+              stones and other locally available flamable materials like staw
+              and wood</span
+            >
+          </li>
+          <li>
+            <i class="fas">&#xf773;</i>
+            Finding Water
+            <span class="fa-solid"
+              >Without water, you will not survive for long. you will learn how
+              to find water, purify it and make it safe to drink</span
+            >
+          </li>
+          <li>
+            <i class="fas">&#xf0c1;</i>
+            Know your Knots
+            <span class="fa-solid"
+              >Knowing how to make ropes and knot them around branches and the
+              likes will help you construct stuff that will make your wild
+              camping successful</span
+            >
+          </li>
+          <li>
+            <i class="fas">&#xf6ec;</i>
+            ...and more as required by situation occuring!
+            <span class="fa-solid"
+              >You will be supervised by experienced trainers who while teaching
+              you the necessary can assertain what other essential skills you
+              may require depending on the environment you are camping in</span
+            >
+          </li>
+        </ul>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          dicta facilis esse sed, totam tempora blanditiis error ducimus?
+          Suscipit, possimus. Quidem voluptas quia eveniet dicta quisquam ipsum
+          illo sit debitis!
+        </p>
+      </section>
+      <section id="section-form">
+        <h2 class="sub-heading">Registration</h2>
+        <p>
+          Register your interest by filling the form and we will contact you
+          with more information
+        </p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h2 class="sub-heading">Registration Form</h2>
+          <label for="forename"> Forename:</label>
+
+          <input
+            type="text"
+            id="forename"
+            name="forename"
+            placeholder="Enter Forename"
+            required
+          />
+
+          <label for="surname"> Surname:</label>
+
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Enter Surname"
+            required
+          />
+
+          <label for="email"> Email:</label>
+
+          <input type="email" id="email" name="email" placeholder="Enter Email" required />
+
+          <label for="textarea"> Enter any special request here:</label>
+
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Enter any special request here"
+          ></textarea>
+
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          delectus?
+        </p>
+      </section>
+
+      <section id="booking">
+        <h2 class="sub-heading booking">Booking</h2>
+        <p class="paragraph">
+          Book NOW for an unforgettable experience. Choose from:
+        </p>
+        <article>
+          <h3><a href="#">Greenhorn Experience</a></h3>
+          <p class="paragraph">
+            <em class="em">"Total Rookie"</em> No previous experience
+          </p>
+          <p class="article-p">£500</p>
+          <button
+            class="select"
+            type="button"
+            value="£500"
+            onclick="alert('£500 Selected')"
+          >
+            Select
+          </button>
+        </article>
+        <article>
+          <h3><a href="#">Brownhorn Experience</a></h3>
+          <p class="paragraph">
+            <em class="em">"I've Done It Before"</em> Some experience
+          </p>
+          <p class="article-p">£750</p>
+          <button
+            class="select"
+            type="button"
+            value="£750"
+            onclick="alert('£750 Selected')"
+          >
+            Select
+          </button>
+        </article>
+        <article>
+          <h3><a href="#">Brokenhorn Experience</a></h3>
+          <p class="paragraph">
+            <em class="em">"Die-Hard"</em> Can't-get-enough of the experience
+          </p>
+          <p class="article-p">£1000</p>
+          <button
+            class="select"
+            type="button"
+            value="£1000"
+            onclick="alert('£1000 Selected')"
+          >
+            Select
+          </button>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <address>EarlyMan Camping</address>
+      <p>Location: In the wild, anywhere!</p>
+      <p>Copyright&copy (Dec. 2022)</p>
+
+      <ul id="footer-ul">
+        <li>
+          <a class="nav-link" href="#header-img">Logo</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#info">Info</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#video">Video</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#form">Form</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#booking">Booking</a>
+        </li>
+      </ul>
+      <a
+        href="https://www.flaticon.com/free-icons/caveman"
+        title="caveman icons"
+        >Caveman icons created by Flat Icons - Flaticon</a
+      >
+    </footer>
+  </body>
+</html>
+<!-- 1. The navbar should always be at the top of the viewport
+2. Your product landing page should have at least one media query
+3. Your product landing page should utilize CSS flexbox at least once -->
